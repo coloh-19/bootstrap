@@ -17,7 +17,6 @@
     <title>Formulario 2</title>
 </head>
 <body>
-    <div class="container">
     <nav class="navbar navbar-expand-lg navbar navbar-dark bg-primary">
         <a class="red-text navbar-brand" href="navbar.html"> I.S.P.N <i class="fas fa-book-reader"> </i> </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -28,11 +27,11 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="red-text nav-link" href="formulario-1.html"> Registrarse <span
+                    <a class="red-text nav-link" href="iniciar-sesión.html"> Iniciar sesión <span
                             class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="red-text nav-link" href="formulario-2.html"> Iniciar sesión </a>
+                    <a class="red-text nav-link" href="formulario-2.html"> Inscripción </a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link red-text dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -46,39 +45,50 @@
                         <a class="red-text dropdown-item" href="#">Otra</a>
                     </div>
                 </li>
+                <li class="nav-item">
+                    <a class="red-text nav-link" href="carousel.html"> Carousel </a>
+                </li>
             </ul>
         </div>
     </nav>
-    <form>
-        <div class="row">
-            <div class= "col-sm-12 col-md-6">
-                <div class="form-group">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" class="form-control" id="nombre" required>
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="navbar.html">Inicio</a></li>
+            <li class="breadcrumb-item" aria-current="page">Registrarse</li>
+            <li class="breadcrumb-item active" aria-current="page"> Iniciar sesión</li>
+            </ol>
+        </nav>
+        <form>
+            <div class="row">
+                <div class= "col-sm-12 col-md-6">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" required>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="form-group">
+                        <label for="documento">DNI</label>
+                        <input type="text" class="form-control" id="documento" required>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class= "form-group">
+                        <label for="fecha-nac">Fecha de nacimiento</label>
+                        <input type="date" class="form-control" id="fecha-nac" required>
+                    </div>
+                </div>
+                <div class="colo-sm-12 col-md-6">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-6">
-                <div class="form-group">
-                    <label for="documento">DNI</label>
-                    <input type="text" class="form-control" id="documento" required>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-6">
-                <div class= "form-group">
-                    <label for="fecha-nac">Fecha de nacimiento</label>
-                    <input type="date" class="form-control" id="fecha-nac" required>
-                </div>
-            </div>
-            <div class="colo-sm-12 col-md-6">
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email" required>
-                </div>
-            </div>
-        </div>
-        <button type="submit" class="btn btn-outline-primary"><i class="fas fa-check"></i> Aceptar </button>
-        <button type="button" class="btn btn-outline-danger"><i class="fas fa-times"></i> Cancelar </button>
-    </form>
+            <button type="submit" class="btn btn-outline-primary"><i class="fas fa-check"></i> Aceptar </button>
+            <button type="button" class="btn btn-outline-danger"><i class="fas fa-times"></i> Cancelar </button>
+        </form>
     </div>
 </body>
 </html>

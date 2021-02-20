@@ -17,7 +17,6 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 <body>
-    <div class="container">
         <nav class="navbar navbar-expand-lg navbar navbar-dark bg-primary">
             <a class="red-text navbar-brand" href="navbar.html"> I.S.P.N <i class="fas fa-book-reader"> </i> </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -28,11 +27,11 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="red-text nav-link" href="formulario-1.html"> Registrarse <span
+                        <a class="red-text nav-link" href="iniciar-sesión.html"> Iniciar sesión <span
                                 class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="red-text nav-link" href="formulario-2.html"> Iniciar sesión </a>
+                        <a class="red-text nav-link" href="formulario-2.html"> Inscripción </a>
                     </li>
                     <li class="nav-item dropdown active">
                         <a class="nav-link red-text dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -46,10 +45,22 @@
                             <a class="red-text dropdown-item" href="#">Otra</a>
                         </div>
                     </li>
+                    <li class="nav-item">
+                        <a class="red-text nav-link" href="carousel.html"> Carousel </a>
+                    </li>
                 </ul>
             </div>
         </nav>
     <form>
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="navbar.html">Inicio</a></li>
+            <li class="breadcrumb-item" aria-current="page">Registrarse</li>
+            <li class="breadcrumb-item" aria-current="page"> Iniciar sesión</li>
+            <li class="breadcrumb-item active" aria-current="page">Modal- Alumno</li>
+            </ol>
+        </nav> 
             <div class="row">
                 <div class="col-sm-12 col-md-6">
                      <div class="form-group">
@@ -172,7 +183,6 @@
                 </div>
             </div>
         </div>
-
         <!-- Button trigger modal -->
         <label>Responsable 2</label>
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#responsable2">
@@ -228,11 +238,11 @@
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                             <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
                         </div>
-
                     </form>
                 </div>
             </div>
         </div>
     </div>
+</div>
 </body>
 </html>

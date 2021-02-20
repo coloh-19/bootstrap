@@ -17,7 +17,6 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 <body>
-    <div class="container">
         <nav class="navbar navbar-expand-lg navbar navbar-dark bg-primary">
             <a class="red-text navbar-brand" href="navbar.html"> I.S.P.N <i class="fas fa-book-reader"> </i> </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -28,11 +27,11 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item ">
-                        <a class="red-text nav-link" href="formulario-1.html"> Registrarse <span
+                        <a class="red-text nav-link" href="iniciar-sesión.html"> Iniciar sesión <span
                                 class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="red-text nav-link" href="formulario-2.html"> Iniciar sesión </a>
+                        <a class="red-text nav-link" href="formulario-2.html"> Inscripción </a>
                     </li>
                     <li class="nav-item dropdown active">
                         <a class="nav-link red-text dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -46,34 +45,46 @@
                             <a class="red-text dropdown-item" href="#">Otra</a>
                         </div>
                     </li>
+                    <li class="nav-item">
+                        <a class="red-text nav-link" href="carousel.html"> Carousel </a>
+                    </li>
                 </ul>
             </div>
         </nav>
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ciudad">
-        Modal
-    </button>
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="navbar.html">Inicio</a></li>
+            <li class="breadcrumb-item" aria-current="page">Registrarse</li>
+            <li class="breadcrumb-item" aria-current="page"> Inscripción</li>
+            <li class="breadcrumb-item active" aria-current="page"> Modal- Elegir ciudad</li>
+            </ol>
+        </nav>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ciudad">
+            Modal
+        </button>
 
-    <!-- Modal -->
-    <div class="modal fade" id="ciudad" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Elegir ciudad</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                        <div class="btn-group-vertical">
-                        <button type="button" class="btn btn-warning" data-dismiss="modal">Rosario </button>
-                        <button type="button" class="btn btn-warning" data-dismiss="modal">Funes </button>
-                        <button type="button" class="btn btn-warning" data-dismiss="modal">Roldán </button>
+        <!-- Modal -->
+        <div class="modal fade" id="ciudad" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Elegir ciudad</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                            <div class="btn-group-vertical">
+                            <button type="button" class="btn btn-warning" data-dismiss="modal">Rosario </button>
+                            <button type="button" class="btn btn-warning" data-dismiss="modal">Funes </button>
+                            <button type="button" class="btn btn-warning" data-dismiss="modal">Roldán </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
+     </div>
 </body>
 </html>
